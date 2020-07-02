@@ -12,7 +12,7 @@ function extraer_hoja($archivo){
     $name = $_FILES["archivo"]["name"]; 
     $type = $archivo["type"]; 
     $tmp_name = $archivo; 
-
+    echo "variable archivo: ",$archivo;
 
     # check de tamaño de archivo 5mb
     if ($size > 10000000) { 
@@ -40,10 +40,5 @@ function extraer_hoja($archivo){
     $hoja = $libro->getSheet(0);
     return $hoja;
 }
-
-
-
-
-
 
 ?>
